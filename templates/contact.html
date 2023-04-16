@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+    <main>
+        <section>
+            <article>
+                <h1>Send me email</h1>
+                <form action="{{ url_for('submit') }}" method="post">
+                    <label for="">Email<input type="email" name="email" id="email"></label>
+                    <label for="">Message <textarea name="message" id="message" required></textarea></label>
+                    <input type="submit" value="Send">
+                </form>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Social Medias</h3>
+                <div class="container">
+                    <a href="https://github.com/alexsandersautier" target="_blank"><img src="../static/img/GitHub-logo.jpg" alt="" class="media"></a>
+                    <a href="https://www.linkedin.com/in/alexsander-ramos-526678106/" target="_blank"><img src="../static/img/linkedin.png" alt="" class="media"></a>
+                    <a href="https://www.instagram.com/futurecode_software/" target="_blank"><img src="../static/img/Instagram-Icon.png" alt="" class="media"></a>
+                    <a href=" https://api.whatsapp.com/send?phone=5549988139463&text='Olá vim através do seu portifólio'" target="_blank"><img src="../static/img/wpp.png" alt="" class="media"></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    {% endblock %}
+</body>
+</html>

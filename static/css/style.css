@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding-left: 5px;
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a:hover{
+    background-color: rgb(179, 176, 176);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+section{
+    width: 700px; /* Definir a largura */
+    min-height: 100px; /* Definir a altura */
+    margin: 10px; /* Definir a margem */
+    border-radius: 5px;
+    background-color: #ddd;
+}
+p,h1,h2,h3{
+    margin-left: 5px;
+}
+iframe{
+    width: 700px;
+}
+.tech{
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    height: 60px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  /* Estilo do campo de entrada de email */
+  input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-width: 350px; /* Adicione essa linha para limitar a largura máxima */
+  }
+  
+  
+  /* Estilo do campo de entrada de mensagem */
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 150px; /* Adicione essa linha para definir uma altura fixa */ }
+  
+  /* Estilo do botão de envio */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Alteração de cor do botão de envio ao passar o mouse */
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+.media{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
