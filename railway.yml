@@ -1,0 +1,11 @@
+name: main.py
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env:
+      RAILWAY_APP_NAME: main.py
+      PORT: 8080
+    http:
+      public: true
