@@ -6,8 +6,11 @@ app = Flask(__name__)
 app.secret_key = 'chave-secreta'
 #definir uma rota
 @app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/home')
 def home():
-    return render_template('templates/index.html')
+    return render_template('home.html')
 @app.route('/projects')
 def projects():
     return render_template('projects.html')

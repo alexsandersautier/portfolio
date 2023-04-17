@@ -4,59 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/style.css') }}">
+    <title>Portfolio</title>
 </head>
 <body>
-    {% extends "template.html" %}
+    <header>
+        <figure>
+            <img class="logo" src="../static/img/eu-circular.png" alt="">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">home</a></li>
+                <li><a href="{{ url_for('projects') }}">projects</a></li>
+                <li><a href="{{ url_for('contact') }}">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; Sautier Alexsander. All rights reserved.</p>
+    </footer>
     {% block content %}
-    <main>
-        <section>
-            <article>
-                <h1>About</h1>
-                <p>Alexsander Sautier is a software developer with over 5 years of experience in the IT field. Currently, 
-                    he is a full-stack developer at <strong>Proxsis Sistemas</strong>, where he works on developing customized 
-                    solutions for clients in various industries.</p>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Training</h3>
-                <P>
-                    Graduated in Systems Analysis and Development from Unifael University, Alexsander began his career as an 
-                    intern at a technology startup, where he gained experience in web and desktop applications. Since then, he
-                    has worked on challenging projects, using his skills in technologies such as Python, Delphi, JavaScript, HTML,
-                    CSS and frameworks like Django.
-                </P>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Person</h3>
-                <p>
-                    In addition to his passion for technology, Alexsander is an active contributor in development communities, participating
-                    in meetups and conferences. He is also an enthusiast of video games, music, and enjoys practicing sports such as weightlifting
-                    and jump rope.
-                </p>
-                <p>
-                    With his results-oriented approach and his ability to think outside the box, Alexsander is always seeking ways to improve his 
-                    knowledge and skills to bring innovative solutions to his clients.
-                </p>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Technologies</h3>
-                <marquee class="tech">
-                    <img src="../static/img/python.png" alt="" width="50px" height="50px">
-                    <img src="../static/img/flask.png" alt="" width="50px" height="50px">
-                    <img src="../static/img/django.png" alt="" width="50px" height="50px">
-                    <img src="../static/img/HTML5.png" alt="" width="50px" height="50px">
-                    <img src="../static/img/CSS.png" alt="" width="50px" height="50px">
-                </marquee>
-            </article>
-        </section>
-    
-    </main>
     {% endblock %}
 </body>
 </html>
